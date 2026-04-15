@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Créateur de Merveilles Numériques</title>
+    <meta name="description"
+        content="Portfolio d'expert en création web. Je transforme vos idées en expériences numériques modernes et performantes.">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Lucide Icons (script) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header id="header" class="header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <span class="neon-text">A.</span>Dev
+            </a>
+            <nav class="nav-links">
+                <a href="#services">Services</a>
+                <a href="projets.html">Portfolio</a>
+                <a href="#process">Processus</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="social-icons header-socials">
+                <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                <a href="#" aria-label="GitHub"><i data-lucide="github"></i></a>
+            </div>
+            <button class="mobile-menu-btn" aria-label="Menu">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section id="hero" class="hero section">
+            <div class="container hero-container">
+                <div class="hero-content reveal">
+                    <div class="badge">Designer & Développeur Full-Stack</div>
+                    <h1 class="hero-title">Je transforme vos idées en <span class="neon-gradient">expériences
+                            numériques</span></h1>
+                    <p class="hero-subtitle">Création de sites web modernes, rapides et optimisés pour la conversion. Du
+                        design à la mise en ligne, un accompagnement sur mesure.</p>
+                    <div class="hero-actions">
+                        <a href="projets.html" class="btn btn-primary">Voir mes projets <i
+                                data-lucide="arrow-right"></i></a>
+                        <a href="#contact" class="btn btn-outline">Discutons de votre projet</a>
+                    </div>
+                </div>
+                <div class="hero-visual reveal reveal-right">
+                    <div class="glow-sphere"></div>
+                    <div class="glass-card hero-card">
+                        <div class="card-header">
+                            <div class="dots">
+                                <span></span><span></span><span></span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <pre><code>const creator = {
+  name: "Benjamin",
+  surname: "Pelissier",
+  skills: ["React", "UI/UX", "SEO"],
+  mission: "Créer l'impact"
+};
+
+creator.buildAwesomeWebsite();</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES SECTION -->
+        <section id="services" class="services section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2>Mon <span class="neon-text">Expertise</span></h2>
+                    <p>Des solutions sur mesure adaptées à vos besoins pour propulser votre activité.</p>
+                </div>
+
+                <div class="services-grid">
+                    <div class="service-card glass-card reveal">
+                        <div class="service-icon"><i data-lucide="monitor-stop"></i></div>
+                        <h3>Sites Vitrines</h3>
+                        <p>Des sites web rapides et modernes pour présenter votre entreprise et captiver votre audience
+                            cible.</p>
+                    </div>
+
+                    <div class="service-card glass-card reveal reveal-delay-1">
+                        <div class="service-icon"><i data-lucide="shopping-cart"></i></div>
+                        <h3>E-commerce</h3>
+                        <p>Boutiques en ligne performantes et sécurisées, conçues pour maximiser vos ventes et
+                            conversions.</p>
+                    </div>
+
+                    <div class="service-card glass-card reveal reveal-delay-2">
+                        <div class="service-icon"><i data-lucide="search"></i></div>
+                        <h3>SEO & Performance</h3>
+                        <p>Optimisation technique pour les moteurs de recherche afin de garantir une visibilité
+                            maximale.</p>
+                    </div>
+
+                    <div class="service-card glass-card reveal reveal-delay-3">
+                        <div class="service-icon"><i data-lucide="settings"></i></div>
+                        <h3>Maintenance</h3>
+                        <p>Support continu, mises à jour de sécurité et évolutions pour garantir la longévité de votre
+                            site.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PORTFOLIO SECTION -->
+        <section id="portfolio" class="portfolio section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2>Projets <span class="neon-text">Récents</span></h2>
+                    <p>Découvrez une sélection de mes réalisations les plus impactantes.</p>
+                </div>
+
+                <div class="bento-grid">
+                    <div class="bento-item bento-large glass-card reveal">
+                        <img src="/home/benjamin/.gemini/antigravity/brain/8b64f3de-936f-4ada-9a0f-93012e6c4d52/saas_mockup_1775818559902.png"
+                            alt="Dashboard SaaS Analytics" class="project-img"
+                            onerror="this.src='https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1000'">
+                        <div class="project-info">
+                            <span class="project-tag">SaaS / Dashboard</span>
+                            <h3>Nexus Analytics</h3>
+                            <p>Interface de tableau de bord moderne avec thématique sombre et dataviz.</p>
+                            <a href="#" class="project-link">Voir la démo <i data-lucide="external-link"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="bento-item glass-card reveal reveal-delay-1">
+                        <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&q=80&w=800"
+                            alt="Boutique E-commerce" class="project-img">
+                        <div class="project-info">
+                            <span class="project-tag">E-commerce</span>
+                            <h3>Urban Style</h3>
+                            <p>Boutique en ligne minimaliste et performante.</p>
+                        </div>
+                    </div>
+
+                    <div class="bento-item glass-card reveal reveal-delay-2">
+                        <img src="https://images.unsplash.com/photo-1621503893347-fa2f0ff4cc18?auto=format&fit=crop&q=80&w=800"
+                            alt="Portfolio Agence" class="project-img">
+                        <div class="project-info">
+                            <span class="project-tag">Corporate</span>
+                            <h3>Agence Creative</h3>
+                            <p>Site vitrine immersif avec animations fluides.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="text-align: center; margin-top: 3rem;" class="reveal">
+                    <a href="projets.html" class="btn btn-outline">Explorer tous les projets <i
+                            data-lucide="grid"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROCESS SECTION -->
+        <section id="process" class="process section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2>Mon <span class="neon-text">Processus</span></h2>
+                    <p>Une méthodologie claire pour transformer votre vision en réalité.</p>
+                </div>
+
+                <div class="timeline">
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot">1</div>
+                        <div class="timeline-content glass-card">
+                            <h3><i data-lucide="message-square"></i> Le Brief</h3>
+                            <p>Nous discutons de vos objectifs, de votre cible et de vos préférences visuelles pour
+                                établir un cahier des charges précis.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot">2</div>
+                        <div class="timeline-content glass-card">
+                            <h3><i data-lucide="pen-tool"></i> UI/UX Design</h3>
+                            <p>Je conçois des maquettes interactives pour vous donner une vision claire du rendu final
+                                avant de coder.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot">3</div>
+                        <div class="timeline-content glass-card">
+                            <h3><i data-lucide="code"></i> Développement</h3>
+                            <p>Intégration du design avec un code propre, sémantique, performant et adapté à tous les
+                                écrans.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item reveal">
+                        <div class="timeline-dot">4</div>
+                        <div class="timeline-content glass-card">
+                            <h3><i data-lucide="rocket"></i> Mise en ligne</h3>
+                            <p>Tests finaux, optimisation SEO, hébergement et lancement officiel de votre nouvelle
+                                plateforme.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="contact section">
+            <div class="container">
+                <div class="contact-wrapper glass-card reveal">
+                    <div class="contact-info">
+                        <h2>Prêt à <span class="neon-text">collaborer</span> ?</h2>
+                        <p>Que vous ayez une idée précise ou besoin de conseils, je suis à votre écoute pour donner vie
+                            à votre projet.</p>
+
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i data-lucide="mail"></i>
+                                <span>hello@votre-domaine.com</span>
+                            </div>
+                            <div class="contact-item">
+                                <i data-lucide="map-pin"></i>
+                                <span>Disponible en Remote</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Nom</label>
+                            <input type="text" id="name" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="john@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="4" placeholder="Parlez-moi de votre projet..."
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary submit-btn">
+                            Envoyer le message <i data-lucide="send"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-logo">
+                <span class="neon-text">A.</span>Dev
+            </div>
+            <p class="copyright">&copy; <span id="year"></span> Tous droits réservés.</p>
+            <div class="social-icons">
+                <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                <a href="#" aria-label="GitHub"><i data-lucide="github"></i></a>
+                <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
