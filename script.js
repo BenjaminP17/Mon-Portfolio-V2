@@ -74,17 +74,49 @@ document.addEventListener('DOMContentLoaded', () => {
             const btn = form.querySelector('button[type="submit"]');
             const originalText = btn.innerHTML;
             
-            btn.innerHTML = 'Message Envoyé <i data-lucide="check"></i>';
-            btn.style.background = '#27c93f';
+            btn.innerHTML = 'Envoi... <i data-lucide="loader"></i>';
             lucide.createIcons();
             
-            form.reset();
+            const ajaxUrl = form.action.replace('https://formsubmit.co/', 'https://formsubmit.co/ajax/');
             
-            setTimeout(() => {
-                btn.innerHTML = originalText;
-                btn.style.background = '';
+            fetch(ajaxUrl, {
+                method: "POST",
+                headers: { 
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify({
+                    name: document.getElementById('name').value,
+                    email: document.getElementById('email').value,
+                    message: document.getElementById('message').value
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                btn.innerHTML = 'Message Envoyé <i data-lucide="check"></i>';
+                btn.style.background = '#27c93f';
                 lucide.createIcons();
-            }, 3000);
+                
+                form.reset();
+                
+                setTimeout(() => {
+                    btn.innerHTML = originalText;
+                    btn.style.background = '';
+                    lucide.createIcons();
+                }, 3000);
+            })
+            .catch(error => {
+                console.error(error);
+                btn.innerHTML = 'Erreur <i data-lucide="x"></i>';
+                btn.style.background = '#ff3333';
+                lucide.createIcons();
+                
+                setTimeout(() => {
+                    btn.innerHTML = originalText;
+                    btn.style.background = '';
+                    lucide.createIcons();
+                }, 3000);
+            });
         });
     }
 });

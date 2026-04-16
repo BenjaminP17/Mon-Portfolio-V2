@@ -46,7 +46,7 @@
         <section id="hero" class="hero section">
             <div class="container hero-container">
                 <div class="hero-content reveal">
-                    <div class="badge">Designer & Développeur Full-Stack</div>
+                    <div class="badge">Editeur & Développeur d'applications Web</div>
                     <h1 class="hero-title">Je transforme vos idées en <span class="neon-gradient">expériences
                             numériques</span></h1>
                     <p class="hero-subtitle">Création de sites web modernes, rapides et optimisés pour la conversion. Du
@@ -70,7 +70,7 @@
   name: "Benjamin",
   surname: "Pelissier",
   skills: ["React", "UI/UX", "SEO"],
-  mission: "Créer l'impact"
+  mission: "Créer / éditer des sites internet"
 };
 
 creator.buildAwesomeWebsite();</code></pre>
@@ -229,7 +229,7 @@ creator.buildAwesomeWebsite();</code></pre>
                         <div class="contact-details">
                             <div class="contact-item">
                                 <i data-lucide="mail"></i>
-                                <span>hello@votre-domaine.com</span>
+                                <span>benjpls@gmail.com</span>
                             </div>
                             <div class="contact-item">
                                 <i data-lucide="map-pin"></i>
@@ -238,20 +238,21 @@ creator.buildAwesomeWebsite();</code></pre>
                         </div>
                     </div>
 
-                    <form class="contact-form">
+                    <form class="contact-form" action="https://formsubmit.co/benjpls@gmail.com" method="POST">
                         <div class="form-group">
                             <label for="name">Nom</label>
-                            <input type="text" id="name" placeholder="John Doe" required>
+                            <input type="text" id="name" name="name" placeholder="John Doe" required>
                         </div>
                         <div class="form-group">
                             <label for="email">Email</label>
-                            <input type="email" id="email" placeholder="john@example.com" required>
+                            <input type="email" id="email" name="email" placeholder="john@example.com" required>
                         </div>
                         <div class="form-group">
                             <label for="message">Message</label>
-                            <textarea id="message" rows="4" placeholder="Parlez-moi de votre projet..."
+                            <textarea id="message" name="message" rows="4" placeholder="Parlez-moi de votre projet..."
                                 required></textarea>
                         </div>
+                        <input type="hidden" name="_captcha" value="false">
                         <button type="submit" class="btn btn-primary submit-btn">
                             Envoyer le message <i data-lucide="send"></i>
                         </button>
